@@ -1,46 +1,167 @@
 <!DOCTYPE html>
-<html>
-<body bgcolor="#FFFFFF">
-        <img align="right" src="https://i.imgur.com/ZroZ0W2.jpeg"
-                 width="400"
-                 height="500"/>
-  <h1 style="color: #000000;">Hello World</h1>
-        <p style="color: #000000;">My name is Lane. I eat pasta and write code.</p>
-        <p style="color: #000000;">My interests are in game development and low level programming.</p>
-        <p style="color: #000000;">Programming languages I'm most familiar with: C++ and C</p>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr">My github is here.</a></ul></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lane's Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a1d3 3px solid;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 20px;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #ddd;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .main-content {
+            flex: 3;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .sidebar img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        p, a {
+            color: #666;
+        }
+        .projects ul, .book-reviews ul, .todo ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects ul li, .book-reviews ul li, .todo ul li {
+            background: #eee;
+            margin: 5px 0;
+            padding: 10px;
+        }
+        .projects ul li a, .book-reviews ul li a, .todo ul li a {
+            color: #333;
+            text-decoration: none;
+        }
+        .projects ul li a:hover, .book-reviews ul li a:hover, .todo ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lane's Personal Website</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
         <a href="blog.html">Blog</a>
+        <a href="https://github.com/Dappstr">GitHub</a>
+    </nav>
+    <div class="container content">
+        <div class="main-content">
+            <h1>Hello World</h1>
+            <p>My name is Lane. I eat pasta and write code.</p>
+            <p>My interests are in game development and low level programming.</p>
+            <p>Programming languages I'm most familiar with: C++ and C</p>
+            
+            <h2>Currently working on:</h2>
+            <ul>
+                <li>School CS classes (ON PAUSE)</li>
+                <li>Learning data structures and algorithms</li>
+                <li>Learning game development with Unreal Engine</li>
+                <li>Learning python</li>
+            </ul>
 
+            <h2>Projects:</h2>
+            <div class="projects">
+                <ul>
+                    <li><a href="https://github.com/Dappstr/STL_Impl">Implementation of some of the Standard Template Library</a></li>
+                    <li><a href="https://github.com/Dappstr/Dapper-Dasher">A very simple runner game utilizing Raylib</a></li>
+                    <li><a href="https://github.com/Dappstr/Breakout">A simple clone of breakout in C++ using Raylib</a></li>
+                    <li><a href="https://github.com/Dappstr/Tetris">A tetris clone made in modern C++ using Raylib</a></li>
+                    <li><a href="https://github.com/Dappstr/Slash_game">Source code to my very first Unreal Engine game made with UE5</a></li>
+                </ul>
+            </div>
 
-    <h1 style="color: #000000;">Currently working on:</h1>
-        <ul><p style="color: #000000;">School CS classes<span style="color: #000000;">&nbsp;&nbsp;(ON PAUSE)</span></ul></p></ul></p>
-        <ul><p style="color: #000000;">Learning data structures and algorithms<span style="color: #000000;">&nbsp;&nbsp;</span></ul></p></ul></p>
-        <ul><p style="color: #000000;">Learning game development with Unreal Engine<span style="color: #000000;">&nbsp;&nbsp;</span></ul></p></ul></p>
-        <ul><p style="color: #000000;">Learning python<span style="color: #000000;">&nbsp;&nbsp;</span></ul></p></ul></p>
+            <h2>Currently reading:</h2>
+            <p><a href="https://www.amazon.com/Professional-C-Marc-Gregoire/dp/1119695406">Professional C++ (5th Edition)</a></p>
 
-  <h1 style="color: #000000;">Projects:</h1>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr/STL_Impl">Implementation of some of the Standard Template Library</a></ul></p>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr/Dapper-Dasher">A very simple runner game utilizing Raylib</a></ul></p>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr/Breakout">A simple clone of breakout in C++ using Raylib</a></ul></p>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr/Tetris">A tetris clone made in modern C++ using Raylib</a></ul></p>
-        <ul><p style="color: #000000;"><a href="https://github.com/Dappstr/Slash_game">Source code to my very first Unreal Engine game made with UE5</a></ul></p>
+            <h2>Book Reviews:</h2>
+            <div class="book-reviews">
+                <ul>
+                    <li><a href="https://www.amazon.com/gp/product/1260547728/">C++ Programming: An Object-Oriented Approach (Forouzan)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/CPP_OOP(Forouzan)">Review</a></li>
+                    <li><a href="https://www.amazon.com/Move-Semantics-Complete-Guide-First/dp/3967309002">C++ Move Semantics - The Complete Guide (Josuttis)</a> : <a href="https://github.com/Dappstr/Book-Reviews/blob/main/CPP_Move_Semantics(Josuttis)">Review</a></li>
+                    <li><a href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996">Effective Modern C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_Modern_CPP(Meyers)">Review</a></li>
+                    <li><a href="https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876">Effective C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_CPP_ThirdEdition(Meyers)">Review</a></li>
+                    <li><a href="https://www.amazon.com/Discovering-Modern-Scientists-Programmers-Depth/dp/0134383583">Discovering Modern C++ 1st Edition (Gottschling)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Discovering_Modern_CPP">Review</a></li>
+                    <li><a href="https://www.amazon.com/C-Programming-Language-4th/dp/0321563840">The C++ Programming Language 4th Edition</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/The_CPP_Programming_Language_4thEdition">Review</a></li>
+                </ul>
+            </div>
 
-  <h1 style="color: #000000;">Currently reading:</h1>
-        <ul><p style="color: #000000;"><a href="https://www.amazon.com/Professional-C-Marc-Gregoire/dp/1119695406">Professional C++ (5th Edition)</a></ul></p>
-
-<h1 style="color: #000000;">Book Reviews:</h1>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/gp/product/1260547728/">C++ Programming: An Object-Oriented Approach (Forouzan)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/CPP_OOP(Forouzan)">Review</a></ul></p>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/Move-Semantics-Complete-Guide-First/dp/3967309002">C++ Move Semantics - The Complete Guide (Josuttis)</a> : <a href="https://github.com/Dappstr/Book-Reviews/blob/main/CPP_Move_Semantics(Josuttis)">Review</a></ul></p>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996">Effective Modern C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_Modern_CPP(Meyers)">Review</a></ul></p>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876">Effective C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_CPP_ThirdEdition(Meyers)">Review</a></ul></p>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/Discovering-Modern-Scientists-Programmers-Depth/dp/0134383583">Discovering Modern C++ 1st Edition (Gottschling) </a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Discovering_Modern_CPP">Review</a></ul></p>
-    <ul><p style="color: #000000;"><a href="https://www.amazon.com/C-Programming-Language-4th/dp/0321563840">The C++ Programming Language 4th Edition </a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/The_CPP_Programming_Language_4thEdition">Review</a></ul></p>
-
-<h1 style="color: #000000;">TODO in the future:</h1>
-    <ul><p style="color: #000000;">Learn Java, C#</ul></p>
-    <ul><p style="color: #000000;">More experience with templates and template metaprogramming</ul></p>
-    <ul><p style="color: #000000;">Graphics programming and gaining experience with OpenGL, DirectX, Vulkan, QT, SDL, SFML</ul></p>
-    <ul><p style="color: #000000;">More lower level memory practice</ul></p>
-    <ul><p style="color: #000000;">Write a compiler</ul></p>
+            <h2>TODO in the future:</h2>
+            <div class="todo">
+                <ul>
+                    <li>Learn Java, C#</li>
+                    <li>More experience with templates and template metaprogramming</li>
+                    <li>Graphics programming and gaining experience with OpenGL, DirectX, Vulkan, QT, SDL, SFML</li>
+                    <li>More lower level memory practice</li>
+                    <li>Write a compiler</li>
+                </ul>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <img src="https://i.imgur.com/ZroZ0W2.jpeg" alt="Lane's Image">
+        </aside>
+    </div>
+    <footer>
+        <p>Lane's Personal Website &copy; 2024</p>
+    </footer>
 </body>
 </html>
