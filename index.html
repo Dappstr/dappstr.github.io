@@ -1,166 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lane's Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 20px;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77a1d3 3px solid;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        nav {
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #333;
-            text-decoration: none;
-            padding: 5px 20px;
-            display: inline-block;
-        }
-        nav a:hover {
-            background: #ddd;
-            color: #333;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        .main-content {
-            flex: 3;
-            padding: 20px;
-        }
-        .sidebar {
-            flex: 1;
-            background: #f4f4f4;
-            padding: 20px;
-            margin: 20px 0;
-        }
-        .sidebar img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        p, a {
-            color: #666;
-        }
-        .projects ul, .book-reviews ul, .todo ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .projects ul li, .book-reviews ul li, .todo ul li {
-            background: #eee;
-            margin: 5px 0;
-            padding: 10px;
-        }
-        .projects ul li a, .book-reviews ul li a, .todo ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-        .projects ul li a:hover, .book-reviews ul li a:hover, .todo ul li a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lane Beals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+      overflow: hidden;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+
+    nav a {
+      color: #e0f2fe;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 4rem 2rem;
+      border-radius: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-top: 1rem;
+      color: #cbd5e1;
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <h1>Lane's Personal Website</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog.html">Blog</a>
-        <a href="https://github.com/Dappstr">GitHub</a>
-    </nav>
-    <div class="container content">
-        <div class="main-content">
-            <h1>Hello World</h1>
-            <p>My name is Lane. I eat pasta and write code.</p>
-            <p>My interests are in systems programming.</p>
-            <p>Programming languages I'm most familiar with: Rust, C++, Zig, C, Objective-C, Python</p>
-            
-            <h2>Currently working on:</h2>
-            <ul>
-                <li>School CS classes</li>
-                <li>Learning iOS and MacOS development with Objective-C (ON PAUSE)</li>
-                <li>Learning AArch64 assembly programming</li>
-            </ul>
+  <video autoplay muted loop playsinline id="bg-video">
+    <source src="https://cdn.pixabay.com/video/2024/06/12/216369_large.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-            <h2>Projects:</h2>
-            <div class="projects">
-                <ul>
-                    <li><a href="https://github.com/Dappstr/CPP_Lox"> A C++ implementation of the Lox language(s) (ON PAUSE) </a></li>
-                </ul>
-            </div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="blog.html" target="_blank">Blog</a>
+    <a href="https://github.com/Dappstr" target="_blank">GitHub</a>
+  </nav>
 
-            <h2>Currently reading:</h2>
-            <p><a href="https://www.amazon.com/Computer-Systems-Programmers-Perspective-3rd/dp/013409266X">Computer Systems: A Programmer's Perspective</a></p>
-            <p><a href="https://craftinginterpreters.com/">Crafting Interpreters</a> (ON PAUSE)</p>
-            <p><a href="https://www.amazon.com/Introduction-Algorithms-fourth-Thomas-Cormen/dp/026204630X">Introduction to Algorithms (CLRS)</a> (ON PAUSE)</p>
-            <h2>Book Reviews:</h2>
-            <div class="book-reviews">
-                <ul>
-                    <li><a href="https://www.amazon.com/gp/product/1260547728/">C++ Programming: An Object-Oriented Approach (Forouzan)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/CPP_OOP(Forouzan)">Review</a></li>
-                    <li><a href="https://www.amazon.com/Move-Semantics-Complete-Guide-First/dp/3967309002">C++ Move Semantics - The Complete Guide (Josuttis)</a> : <a href="https://github.com/Dappstr/Book-Reviews/blob/main/CPP_Move_Semantics(Josuttis)">Review</a></li>
-                    <li><a href="https://www.amazon.com/Effective-Modern-Specific-Ways-Improve/dp/1491903996">Effective Modern C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_Modern_CPP(Meyers)">Review</a></li>
-                    <li><a href="https://www.amazon.com/Effective-Specific-Improve-Programs-Designs/dp/0321334876">Effective C++ (Meyers)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Effective_CPP_ThirdEdition(Meyers)">Review</a></li>
-                    <li><a href="https://www.amazon.com/Discovering-Modern-Scientists-Programmers-Depth/dp/0134383583">Discovering Modern C++ 1st Edition (Gottschling)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Discovering_Modern_CPP">Review</a></li>
-                    <li><a href="https://www.amazon.com/C-Programming-Language-4th/dp/0321563840">The C++ Programming Language 4th Edition (Stroustrup)</a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/The_CPP_Programming_Language_4thEdition">Review</a></li>
-                    <li><a href="https://www.amazon.com/C-17-Complete-Guide-First/dp/396730017X/">C++17 - The Complete Guide (Josuttis) </a> : <a href="https://github.com/Dappstr/Book-Reviews/blob/main/CPP_17_The_Complete_guide/">Review</a></li>
-                    <li><a href="https://www.amazon.com/Professional-C-Marc-Gregoire/dp/1119695406">Professional C++ 5th Edition (Gregoire) </a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/Professional_CPP_FifthEdition">Review</a></li>
-                    <li><a href="https://www.amazon.com/gp/product/0321714121">C++ Templates: The Complete Guide (Vandevoorde) </a> : <a href="https://github.com/Dappstr/Book-Reviews/tree/main/CPP_Templates%20The%20Complete%20Guide">Review</a></li>
-
-                </ul>
-            </div>
-
-            <h2>TODO in the future:</h2>
-            <div class="todo">
-                <ul>
-                    <li>Learn ARM assembly</li>
-                    <li>Write a compiler</li>
-                    <li>Write a small OS</li>
-
-                </ul>
-            </div>
-        </div>
-        <aside class="sidebar">
-            <img src="https://i.imgur.com/ZroZ0W2.jpeg" alt="Lane's Image">
-        </aside>
-    </div>
-    <footer>
-        <p>Lane's Personal Website &copy; 2024</p>
-    </footer>
+  <div class="overlay">
+    <h1>Lane Beals</h1>
+    <p>Aspiring Systems Programmer</p>
+  </div>
 </body>
+
 </html>
