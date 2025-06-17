@@ -21,9 +21,33 @@
       padding: 2rem;
     }
 
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+
+    nav a {
+      color: #e0f2fe;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
     .container {
       max-width: 800px;
-      margin: 0 auto;
+      margin: 6rem auto 0 auto;
       background: #1a1a1a;
       border-radius: 12px;
       padding: 2rem;
@@ -73,6 +97,13 @@
 </head>
 
 <body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="blog.html" target="_blank">Blog</a>
+    <a href="https://github.com/Dappstr" target="_blank">GitHub</a>
+  </nav>
+
   <div class="container">
     <img src="https://i.imgur.com/ZroZ0W2.jpeg" alt="Lane Beals" class="profile-pic" />
     <h1>About Me</h1>
@@ -91,14 +122,6 @@
     <h2>Contact Me</h2>
     <p class="email">dappster98@gmail.com</p>
   </div>
-
-  
-    <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="blog.html" target="_blank">Blog</a>
-    <a href="https://github.com/Dappstr" target="_blank">GitHub</a>
-  </nav>
 </body>
 
 </html>
