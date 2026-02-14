@@ -106,7 +106,14 @@
       <div class="container">
         <h1>Welcome to My Blog</h1>
         <p>Insights, stories, and updates from my programming journey.</p>
-          <div class = "post">
+        <div class = "post">
+        <h2>Brainstorming</h2>
+            <p class="date">Posted February 13th 2026</p>
+            <p> So I finally got around to implementing goto in my C subset compiler after several set backs. It wasn't really that difficult. Just needed to make a couple AST node types, add a couple methods to the parser, some new additions to the IR generator, and a few small changes to the code gen. I already had a "jump" instruction implemented back from when I implemented `if` condtitions. The next challenge will be to implement macros. I'm going to start with basic find-and-replace text macros and then expand the preprocessor to support function-like 
+                macros. That's going to be a lot more challenging, but I think it'll be fun. I've also been coming up with more project ideas. I'll need another language to work on for when I start reading my next compiler book in my collection. I had an idea of just making a random programming language consisting of different things I want to experiment with which seems appropriate given that I'm still fairly new to all this, but I am having lots of fun.
+            </p>
+        </div>
+        <div class = "post">
         <h2>The calm before the storm</h2>
             <p class="date">Posted February 11th 2026</p>
             <p> I actually ended up taking a small mental break before jumping back into my C subset compiler. The past few days I've been getting up very early in order to have more time to do the things I wanted to do and accomplish, so I've been kinda tired and needed to catch up on my sleep. I got the lexer/tokenizer/scanner implemented for COOL which is another compiler I'm possibly going to work on, as it's the language students at Stanford implement when they take the compilers class/course. Although my primary studying will be with my C subset compiler 
